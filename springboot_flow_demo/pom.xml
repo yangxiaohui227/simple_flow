@@ -9,7 +9,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
-    <groupId>com.simple</groupId>
+    <groupId>com.yxh.simple</groupId>
     <artifactId>springboot_flow_demo</artifactId>
     <version>1.0.0-RELEASE</version>
     <modelVersion>4.0.0</modelVersion>
