@@ -7,7 +7,7 @@
     <groupId>com.simple</groupId>
     <artifactId>flow_parent</artifactId>
     <packaging>pom</packaging>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0.0-RELEASE</version>
     <modules>
         <module>flow_core</module>
         <module>springboot_flow_demo</module>
