@@ -9,14 +9,14 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
-    <groupId>com.yxh.simple</groupId>
+    <groupId>io.github.yxh-flow</groupId>
     <artifactId>springboot_flow_demo</artifactId>
     <version>1.0.0-RELEASE</version>
     <modelVersion>4.0.0</modelVersion>
 
     <dependencies>
         <dependency>
-            <groupId>com.simple</groupId>
+            <groupId>io.github.yxh-flow</groupId>
             <artifactId>flow_core</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
