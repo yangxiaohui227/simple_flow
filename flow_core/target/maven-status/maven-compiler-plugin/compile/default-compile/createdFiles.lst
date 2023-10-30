@@ -1,7 +1,0 @@
-com\simple\flow\Invoker.class
-com\simple\flow\InvokerContextRequest.class
-com\simple\flow\InvokerHolder.class
-com\simple\flow\EnableSimpleFlow.class
-com\simple\flow\FlowInvokerChainUtil.class
-com\simple\flow\SpendTimeLogInvokerHolder.class
-com\simple\flow\ParseFlowXmlService.class
