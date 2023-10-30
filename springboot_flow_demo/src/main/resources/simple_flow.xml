@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <flow>
-
     <chain name="chain1">
         <invoker>a</invoker>
         <invoker>b</invoker>
@@ -8,9 +7,7 @@
             <invoker>c</invoker>
             <invoker>d</invoker>
         </batch>
-
     </chain>
-
     <chain name="chain2">
         <batch>
             <invoker>b</invoker>
@@ -20,9 +17,5 @@
             <invoker>c</invoker>
             <invoker>d</invoker>
         </batch>
-
     </chain>
-
-
-
 </flow>
