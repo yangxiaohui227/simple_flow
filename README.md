@@ -1,12 +1,8 @@
-<<<<<<< HEAD
-# simple_flow
-Simple, lightweight rule engine framework
-=======
 # Simple process engine framework
 
 ### Introduce:
 
- This is a very lightweight, simple, and high-performance process engine framework
+This is a very lightweight, simple, and high-performance process engine framework
 
 ### Enviroment:
 
@@ -14,7 +10,7 @@ Simple, lightweight rule engine framework
 
 ### Branch:
 
-  The main branch is No longer maintained
+The main branch is No longer maintained
 
 ### Quick start:
 
@@ -47,30 +43,30 @@ Simple, lightweight rule engine framework
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <flow>
-    <chain name="chain1">
-        <invoker>a</invoker>
-        <batch>
-            <invoker>c</invoker>
-            <invoker>d</invoker>
-        </batch>
-         <invoker>b</invoker>
-    </chain>
-    <chain name="chain2">
-        <batch>
-            <invoker>b</invoker>
-        </batch>
+  <chain name="chain1">
+    <invoker>a</invoker>
+    <batch>
+      <invoker>c</invoker>
+      <invoker>d</invoker>
+    </batch>
+    <invoker>b</invoker>
+  </chain>
+  <chain name="chain2">
+    <batch>
+      <invoker>b</invoker>
+    </batch>
 
-        <batch>
-            <invoker>c</invoker>
-            <invoker>d</invoker>
-        </batch>
-    </chain>
+    <batch>
+      <invoker>c</invoker>
+      <invoker>d</invoker>
+    </batch>
+  </chain>
 </flow>
 ```
 
 <invoker> Represents serial execution     <chain> Represents parallel execution
 
-- Add @EnableSimpleFlow annotation to the A startup class 
+- Add @EnableSimpleFlow annotation to the A startup class
 
   ```java
   @SpringBootApplication
@@ -89,17 +85,17 @@ Simple, lightweight rule engine framework
 @RestController
 public class TestController {
 
-    @Autowired
-    private ThreadPoolTaskExecutor shopTaskExecutor;
+  @Autowired
+  private ThreadPoolTaskExecutor shopTaskExecutor;
 
-    @RequestMapping("/test")
-    public String doInvoker(){
-        InvokerContextRequest invokerContextRequest = new InvokerContextRequest();
-        invokerContextRequest.setParam("this is test ....");
-        FlowInvokerChainUtil.getInvokerHolder("chain1").doInvoker(shopTaskExecutor,invokerContextRequest);
-        System.out.println("total cost:"+invokerContextRequest.getCostTime());
-        return "ok";
-    }
+  @RequestMapping("/test")
+  public String doInvoker(){
+    InvokerContextRequest invokerContextRequest = new InvokerContextRequest();
+    invokerContextRequest.setParam("this is test ....");
+    FlowInvokerChainUtil.getInvokerHolder("chain1").doInvoker(shopTaskExecutor,invokerContextRequest);
+    System.out.println("total cost:"+invokerContextRequest.getCostTime());
+    return "ok";
+  }
 
 
 }
@@ -120,4 +116,3 @@ Please refer to the project demo:  springboot_flow_demo
 If you have any good ideas, please contact me at: 15902048215@163.com
 
 ​     
->>>>>>> 0ed93865825b950f98a31e8c0f43cfec19a1c368
