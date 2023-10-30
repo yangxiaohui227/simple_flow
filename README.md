@@ -4,7 +4,7 @@
 
 This is a very lightweight, simple, and high-performance process engine framework
 
-这是一个最轻量，最简单的，高效是流程引擎框架
+这是一个最轻量，最简单的，高效的流程引擎框架
 
 ### Enviroment/环境:
 
