@@ -8,6 +8,10 @@
 
 ​    jdk1.8 + above     spring5.0.5+above
 
+### Branch:
+
+  The main branch is No longer maintained
+
 ### Quick start:
 
 - Add dependency to your project
