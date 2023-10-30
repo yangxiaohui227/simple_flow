@@ -11,6 +11,10 @@
   <properties>
     <java.version>1.8</java.version>
   </properties>
+  <name>simple process engine framework</name>
+  <description>
+    This is a very lightweight, simple, and high-performance process engine framework</description>
+
   <licenses>
     <license>
       <name>Apache-2.0</name>
@@ -39,14 +43,6 @@
     <developerConnection>scm:git:ssh:git@github.com:yxh-flow/simple_flow.git</developerConnection>
     <url>https://github.com/yangxiaohui227/simple_flow/tree/master</url>
   </scm>
-
-
-
-
-
-
-
-
 
 
   <dependencies>
@@ -118,14 +114,6 @@
             </goals>
           </execution>
         </executions>
-      </plugin>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-compiler-plugin</artifactId>
-        <configuration>
-          <source>8</source>
-          <target>8</target>
-        </configuration>
       </plugin>
     </plugins>
   </build>
