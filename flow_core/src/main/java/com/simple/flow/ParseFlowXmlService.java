@@ -145,7 +145,7 @@ public class ParseFlowXmlService implements InitializingBean
             Invoker invoker = invokerMap.get(nodeValue.trim());
             if(null==invoker){
                 //打日志
-                throw new RuntimeException("bean is not exist,may be you spend wrong,please check  beanName:"+nodeValue);
+                throw new RuntimeException("bean is not exist,may be you spell wrong,please check  beanName:"+nodeValue);
             }
             return invoker;
         }
