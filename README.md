@@ -50,7 +50,7 @@ main分支不再维护
 
 - create simple_flow.xml which used for process planning  then place this file in folder resources, 'a' is the beanName of A class
 
-  创建一个simple_flow.xml放到项目resources文件夹下，其中a代表的是A这个对象在spring容器中的BeanName
+  创建一个 simple_flow.xml放到项目resources文件夹下，其中a代表的是A这个对象在spring容器中的BeanName
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
